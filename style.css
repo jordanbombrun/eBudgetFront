@@ -1,0 +1,38 @@
+/* Page d'accueil */
+#barre {
+   margin-top: 40px;
+   background-color: #d45800;
+   height: 150px;
+   border: 1px black solid;
+   border-radius: 5px;
+   opacity: 0.9;
+}
+h1 {
+   font-size: 36px;
+   text-align: center;
+   margin-top: 50px;
+}
+#nB:hover,
+#nE:hover {
+   background-color: gold;
+}
+#nB {
+   border-radius: 5px;
+   margin-top: 50px;
+   margin-bottom: 25px;
+   background-color: #d45800;
+   height: 50px;
+   width: 200px;
+   float: right;
+   margin-right: 150px;
+}
+#nE {
+   border-radius: 5px;
+   margin-top: 50px;
+   margin-bottom: 25px;
+   background-color: #d45800;
+   height: 50px;
+   width: 200px;
+   float: left;
+   margin-left: 150px;
+}
