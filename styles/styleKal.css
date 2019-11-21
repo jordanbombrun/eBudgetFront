@@ -1,0 +1,48 @@
+h1 {
+	padding: 10px;
+	border-radius: 20px;
+	color: white;
+	text-align: center;
+	background-color: rgb(255, 136, 0);
+	font-family: 'Monoton', cursive;
+}
+
+#budInput {
+	float: right;
+	margin-top: 35px;
+}
+
+#budInput2 {
+	float: right;
+	margin-top: 35px;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+	float: none;
+}
+
+#searchBtn {
+	float: right;
+}
+
+#slideBtn {
+	text-align: center;
+}
+
+#budRow {
+	background-color: lightgoldenrodyellow;
+	padding-right: 3%;
+	padding-left: 3%;
+}
+
+#inp {
+	border-radius: 5px;
+	margin: 10px;
+}
+
+.table {
+	margin-top: 60px;
+}
