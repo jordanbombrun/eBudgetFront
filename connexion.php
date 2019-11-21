@@ -1,6 +1,10 @@
 <?php
-include './modules/header.html';
-include './modules/menu.html';
+require './modules/header1.html';
+?>
+<link rel="stylesheet" href="./styles/styleMar.css">
+<?php
+require './modules/header2.html';
+require './modules/menu.html';
 ?>
 
 <div class="connexion">

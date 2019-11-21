@@ -1,7 +1,28 @@
 <?php
-include './modules/header.html';
-include './modules/menu.html';
+require './modules/header1.html';
 ?>
+<link rel="stylesheet" href="./styles/styleFab.css">
+<?php
+require './modules/header2.html';
+require './modules/menu.html';
+?>
+
+<?php
+$filename = basename(__FILE__);
+switch ($filename) {
+	case 'home.php':
+		echo "<h1>home.php</h1>";
+		break;
+	case 'connexion.php':
+		echo "<h1>connexion.php</h1>";
+		// code...
+		break;
+	default:
+		// code...
+		break;
+}
+?>
+
 
 <div class="container">
 	<div class="row" id="barre">
@@ -100,5 +121,5 @@ include './modules/menu.html';
 </div>
 
 <?php
-include './modules/footer.html';
+require './modules/footer.html';
 ?>
