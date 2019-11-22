@@ -1,11 +1,35 @@
-<?php
-require './modules/header1.html';
-?>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="./styles/styleMar.css">
-<?php
-require './modules/header2.html';
-require './modules/menu.html';
-?>
+<title>eBudget</title>
+</head>
+<body>
+
+<!-- Menu responsive -->
+<div class="bs-example" data-example-id="inverted-navbar">
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a href="#" class="navbar-brand">Nom de l'appli</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Accueil</a></li>
+					<li><a href="#">Liste de mes budgets</a></li>
+					<li><a href="#">Link</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
 
 <div class="container">
       <div class="row">
@@ -53,6 +77,18 @@ require './modules/menu.html';
       </div>
 </div>
 
-<?php
-include './modules/footer.html';
-?>
+
+<footer>
+	<div class="footer-copyright text-center py-3">© 2019 Copyright:
+		<a href="https://github.com/jordanbombrun/eBudget.git"> eBudget.com</a>
+	</div>
+
+</footer>
+
+
+
+<script src="./jquery/jquery.js"></script>
+<script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
