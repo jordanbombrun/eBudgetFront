@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="./styles/styleKal.css">
+<title>eBudget</title>
+</head>
+<body>
+
+<!-- Menu responsive -->
+<div class="bs-example" data-example-id="inverted-navbar">
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a href="#" class="navbar-brand">eBudget</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+				<ul class="nav navbar-nav">
+					<li><a href="./home.html">Accueil</a></li>
+					<li class="active"><a href="./budgetList.html">Liste de mes budgets</a></li>
+					<li><a href="./bilan/index.html">Bilan</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
+<div class="container">
+	<h1>Liste des budgets</h1>
+	<div class="row" id="budRow">
+		<div class="col-md-12 ">
+			<div class="input-group input-group-lg" id="budInput">
+				<input type="text" id="inp" class="form-control" placeholder="Nom du budget"
+					aria-describedby="sizing-addon1">
+				<button type="button" class="btn btn-default" id="searchBtn" onclick="">Rechercher</button>
+			</div>
+			<div class="input-group input-group-lg" id="budInput2">
+				<input type="date" id="inp" class="form-control" aria-describedby="sizing-addon1">
+				<button type="button" class="btn btn-default" id="searchBtn" onclick="">Rechercher</button>
+			</div>
+			<div class="row">
+				<div class="col-md-12" id="budgetTbl">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">Nom du budget</th>
+								<th scope="col">Valeur</th>
+								<th scope="col">Date</th>
+								<th scope="col">Vu détaillée</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+								<td><span class="glyphicon glyphicon-th-list" onclick=""></span></td>
+							</tr>
+							<tr>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+								<td><span class="glyphicon glyphicon-th-list" onclick=""></span></td>
+							</tr>
+							<tr>
+								<td>Larry</td>
+								<td>the Bird</td>
+								<td>@twitter</td>
+								<td><span class="glyphicon glyphicon-th-list" onclick=""></span></td>
+							</tr>
+							<tr>
+								<td>Larry</td>
+								<td>the Bird</td>
+								<td>@twitter</td>
+								<td><span class="glyphicon glyphicon-th-list"></span></td>
+							</tr>
+						</tbody>
+					</table>
+					<div id="slideBtn">
+						<span class="glyphicon glyphicon-chevron-left" onclick="showNext()"></span>
+						<span class="glyphicon glyphicon-chevron-right" onclick="showPrevious()"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div id="footer" class="footer-copyright text-center py-3">© 2019 Copyright:
+		<a href="https://github.com/jordanbombrun/eBudget.git"> eBudget.com</a>
+	</div>
+
+</footer>
+<script src="./jquery/jquery.js"></script>
+<script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
