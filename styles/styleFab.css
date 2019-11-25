@@ -1,0 +1,55 @@
+/* Page d'accueil */
+
+body{
+   background-image: url("./backgroundhome.png");
+   background-repeat:no-repeat;
+   background-position: center;
+   font-family: 'Times New Roman', Times, serif;
+	font-size : 18px;
+}
+#barre {
+   margin-top: 40px;
+   background-color: rgb(255, 136, 0);
+   height: 100px;
+   border-radius: 10px;
+   color : white;
+}
+#budgetNow {
+   font-size: 36px;
+   text-align: center;
+   margin-top: 25px;
+}
+#nB:hover,
+#nE:hover {
+   background-color: rgb(247, 172, 86) ;
+}
+#nB {
+   border-radius: 5px;
+   margin-top: 50px;
+   margin-bottom: 25px;
+   background-color:rgb(255, 136, 0);
+   height: 50px;
+   width: 200px;
+   float: right;
+   margin-right: 150px;
+   color : white;
+}
+#nE {
+   border-radius: 5px;
+   margin-top: 50px;
+   margin-bottom: 25px;
+   background-color: rgb(255, 136, 0);
+   height: 50px;
+   width: 200px;
+   float: left;
+   margin-left: 150px;
+   color : white;
+}
+#movementList, #budgetList{
+   background-color:rgba(250, 250, 231, 0.384);
+}
+
+a{
+   color: black;
+}
+

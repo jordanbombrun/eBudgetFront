@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="./styles/styleJess.css">
+<title>eBudget</title>
+</head>
+<body>
+
+<!-- Menu responsive -->
+<div class="bs-example" data-example-id="inverted-navbar">
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a href="#" class="navbar-brand">eBudget</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+				<ul class="nav navbar-nav">
+						<li><a href="/home.html">Accueil</a></li>
+						<li class="active"><a href="/budgetList.html">Liste de mes budgets</a></li>
+						<li><a href="/bilan/index.html">Bilan</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
+<div id="container" class="container">
+	<div id="nameValueBudget" class="row ">
+		<div id="nameBudget" class="col-md-6 text-center">Nom du budget</div>
+		<div id="valueBudget" class="col-md-6 text-left">Valeur du budget</div>
+	</div>
+	<div id="date" class="row">
+		<div id="dateStart" class="col-md-6 text-center">Date début</div>
+		<div id="dateEnd"class="col-md-6">Date fin</div>
+	</div>
+	<div id="content" class="row text-center">
+		<div id="user" class="col-md-4">
+			<div id="titleUser">Utilisateurs</div>
+			<div id="titeAdmin">Administrateurs</div>
+			<div id="list"class="row">
+				<div id="lignList">Dupont
+					<button id="buttonDelete" class="glyphicon glyphicon-remove btn btn-danger" aria-hidden="true"></button>
+					<button id="buttonEdit" class="glyphicon glyphicon-pencil btn btn-warning" aria-hidden="true"></button>
+				</div>
+			</div>
+			<div id="titeAdmin">Membres</div>
+			<div id="list"class="row">
+				<div id="lignList">Dupont
+					<button id="buttonDelete" class="glyphicon glyphicon-remove btn btn-danger" aria-hidden="true"></button>
+					<button id="buttonEdit" class="glyphicon glyphicon-pencil btn btn-warning" aria-hidden="true"></button>
+				</div>
+			</div>
+		</div>
+		<div id="spacing" class="row col-md-1"></div>
+		<div id="movement" class="col-md-7">
+			<div id="list"class="row">
+				<div id="titeMvt">Mouvements</div>
+				<div id="lignMvt"> Test Debit Mouvement
+					<button id="buttonDelete" class="glyphicon glyphicon-remove btn btn-danger" aria-hidden="true"></button>
+					<button id="buttonEdit" class="glyphicon glyphicon-pencil btn btn-warning" aria-hidden="true"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="actionAdd" class="row">
+		<a href="./adduser.html" class="col-md-5 btn btn-success">Ajouter un utilisateur</a>
+		<div id="spacingButton" class="row col-md-2"></div>
+		<a href="./addmouvement.html" class="col-md-5 btn btn-success">Ajouter un mouvement</a>
+	</div>
+	<div id="actionDelete" class="row">
+		<button id="deleteBudget" class="col-md-12 btn btn-danger">Supprimer le budget</button>
+	</div>
+</div>

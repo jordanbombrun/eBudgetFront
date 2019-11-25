@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/styleMar.css">
+    <script src="./jquery/jquery.js"></script>
+    <script src="./jquery-3.4.1.min.js"></script>
+<link rel="stylesheet" href="./styles/styleJess.css">
+<title>eBudget</title>
+</head>
+<body>
+    <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-8 col-xs-12 col-md-offset-3 col-sm-offset-2">
+                <div class="register-form">
+                    <form action="" method="post">
+                    <h2 class="text-center">Inscription</h2>
+                    <p class="hint-text">Bienvenu chez nous.</p>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <input type="text" name="first_name" class="form-control" placeholder="First Name" required="required">
+                        </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <input type="text" name="last_name" class="form-control" placeholder="Last Name" required="required">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Email" required="required">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control" placeholder="Password" required="required">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password" required="required">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7">
+                        </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <a href="./acceuil.html" class="btn btn-success btn-block btn-lg">Sign In</a>
+                        </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    <div class="connexion">
+            <form action="" method="post">
+                <h2 class="text-center">Ravis de Vous revoir</h2>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Username" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" required="required">
+                </div>
+                <div class="form-group clearfix">
+                    <button type="submit" class="btn btn-primary pull-right">Connexion</button>
+                </div>
+                <div class="clearfix">
+                    <div class="pull-right" onclick="createlogin()">Inscrivez vous</div>
+                </div>
+            </form>
+        </div>
+    <script>
+    $('.connexion').show();
+    $('.container').hide();
+    function createlogin(){
+        $('.connexion').hide();
+        $('.container').fadeIn();
+    }
+</script>
+</body>
+ 

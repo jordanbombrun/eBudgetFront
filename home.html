@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="./jquery/jquery.js"></script>
+	<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="./styles/styleFab.css">
+<title>eBudget</title>
+</head>
+<body>
+
+<!-- Menu responsive -->
+<div class="bs-example" data-example-id="inverted-navbar">
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a href="#" class="navbar-brand">eBudget</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="home.html">Accueil</a></li>
+					<li><a href="budgetList.html">Liste de mes budgets</a></li>
+					<li><a href="budgetList.html">Bilan</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
+
+<div class="container">
+	<div class="row" id="barre">
+		<div id="budgetNow"class="col-12 offset-md6">
+			Budget temps réel, crédit restant
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<span>
+				<a href="addbudget.html"><button id="nE" type="">Créer un nouveau budget</button></a>
+			</span>
+			<span>
+				<table id="budgetList" class="table border border-danger table-stripped">
+					<thead>
+						<tr class="border border-primary">
+							<th>Les 3 derniers budgets</th>
+							<th>Valeur</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="budgetList.html">Budget n°1</a></td>
+							<td>Montant</td>
+						</tr>
+						<tr>
+						<td><a href="budgetList.html">Budget n°2</a></td>
+							<td>Montant</td>
+						</tr>
+						<tr>
+						<td><a href="budgetList.html">Budget n°3</a></td>
+							<td>Montant</td>
+						</tr>
+					</tbody>
+				</table>
+			</span>
+		</div>
+		<div class="col-md-6">
+			<span>
+				<a href="addmouvement.html"><button id="nB" type="">Ajouter une nouvelle dépense</button></a></span>
+			<span>
+				<table id="movementList" class="table border border-danger table-stripped">
+					<thead>
+						<tr>
+							<th>Les 3 derniers mouvements</th>
+							<th>Valeur</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td> Mouvement n°1</td>
+							<td>Valeur</td>
+						</tr>
+						<tr>
+							<td> Mouvement n°1</td>
+							<td>Valeur</td>
+						<tr>
+							<td> Mouvement n°1</td>
+							<td>Valeur</td>
+						</tr>
+					</tbody>
+				</table>
+			</span>
+		</div>
+		<span>
+		<a href="addmouvement.html"><button id="nB" type="">Bilan</button></a>
+		</span>
+	</div>
+</div>
+
+<footer>
+	<div class="footer-copyright text-center py-3">© 2019 Copyright:
+		<a href="https://github.com/jordanbombrun/eBudget.git"> eBudget.com</a>
+	</div>
+
+</footer>
+
+
+
+<script src="./jquery/jquery.js"></script>
+<script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
