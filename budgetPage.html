@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<script src="./jquery/jquery.js"></script>
+		<link rel="stylesheet" href="./styles/styleJess.css">
+		<link rel='stylesheet' type="text/css" href="styleJessPhone.css" media="(max-width:775px)"/> 
+	<title>eBudget</title>
+	</head>
+	<body>
+
+		<!-- Menu responsive -->
+		<div class="bs-example" data-example-id="inverted-navbar">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> </button>
+						<a href="#" class="navbar-brand">eBudget</a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+						<ul class="nav navbar-nav">
+								<li><a href="/home.html">Accueil</a></li>
+								<li class="active"><a href="/budgetList.html">Liste de mes budgets</a></li>
+								<li><a href="/bilan/index.html">Bilan</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<div id="container" class="container">
+			<div id="nameValueBudget" class="row ">
+				<div id="nameBudget" class="col-md-6 col-xs-6 text-center">Nom du budget</div>
+				<div id="valueBudget" class="col-md-6 col-xs-6 text-left">Valeur du budget</div>
+			</div>
+			<div id="date" class="row">
+				<div id="dateStart" class="col-md-6 col-xs-6 text-center">Date début</div>
+				<div id="dateEnd"class="col-md-6 col-xs-6">Date fin</div>
+			</div>
+			<div id="content" class="row text-center">
+				<div id="user" class="col-md-4 col-xs-12">
+					<div id="titleUser"><b>Utilisateurs</b></div>
+					<div id="titleAdmin">Administrateurs</div>
+					<div id="list"class="row">
+						<div id="lignList">Dupont
+							<button id="buttonDelete" class="glyphicon glyphicon-remove btn btn-danger" aria-hidden="true"></button>
+							<button id="buttonEdit" class="glyphicon glyphicon-pencil btn btn-warning" aria-hidden="true"></button>
+						</div>
+					</div>
+					<div id="titleAdmin">Membres</div>
+					<div id="list"class="row">
+						<div id="lignList">Dupont
+							<button id="buttonDelete" class="glyphicon glyphicon-remove btn btn-danger" aria-hidden="true"></button>
+							<button id="buttonEdit" class="glyphicon glyphicon-pencil btn btn-warning" aria-hidden="true"></button>
+						</div>
+					</div>
+				</div>
+				<div id="spacing" class="row col-md-1"></div>
+				<div id="movement" class="col-md-7 col-xs-12">
+					<div id="list"class="row">
+						<div id="titleMvt"><b>Mouvements</b></div>
+						<div id="lignMvt"> Test Debit Mouvement
+							<button id="buttonDelete" class="glyphicon glyphicon-remove btn btn-danger" aria-hidden="true"></button>
+							<button id="buttonEdit" class="glyphicon glyphicon-pencil btn btn-warning" aria-hidden="true"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="actionAdd" class="row">
+				<button type="button" class="row col-md-3 col-xs-3 btn btn-default" id="addButton" onclick="">Ajouter un utilisateur</button>
+				<!--fenetre modale ajouter un utilisateur : Debut-->
+				<div class="backGr"></div>
+					<div class="f_modale">
+						<span id="closeF" class="glyphicon glyphicon-remove"></span>
+						<div class="add">
+							<form action="" method="post">
+							<h2 class="text-center">Entrez L'identifiant</h2>       
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="ID" required="required">
+							</div>
+							<div class="form-group clearfix">
+								<button id="validateButton" type="submit" class="btn btn-primary pull-right">validez</button>
+							</div>     
+							</form>
+						</div>
+					</div>
+				<!--fenetre modale  ajouter un utilisateur : Fin-->
+				<div id="spacingButton" class="row col-md-6 col-xs-6"></div>
+				<button type="button" class="row col-md-3col-xs-3 btn btn-default" id="addMvt" onclick="">Ajouter un mouvement</button>
+				<!--fenetre modale ajouter un mouvement : Debut-->
+				<div class="backMvt"></div>
+				<div class="windModal">
+					<span id="closeF" class="glyphicon glyphicon-remove"></span>
+					<div class="add">
+						   <form action="" method="post">
+							 <h2 class="text-center">Nouveau mouvement</h2>       
+							 <div class="form-group">
+							   <input type="text" class="form-control" placeholder="Nom mouvement" required="required">
+							 </div>
+							 <div class="form-group">
+							   <div class="btn-group" role="group" aria-label="Basic example">
+								 <button type="button" class="btn btn-secondary">debit</button>
+								 <button type="button" class="btn btn-secondary">credit</button>
+							   </div>
+							 </div>
+							 <div class="form-group">
+							  <div class="dropdown">
+							   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							   Quel budget
+							   <span class="caret"></span>
+							   </button>
+							   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+									<li><a href="#" title="budget 1">budget 1</a></li>
+									<li><a href="#" title="budget 2">budget 2</a></li>
+									<li><a href="#" title="budget 3">budget 3</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="./addbudget.html" title="budget 4">+</a></li>
+							   </ul>
+							   </div>
+							 </div>
+							 <div class="form-group clearfix">
+							   <button type="submit" class="btn btn-primary pull-right">validez</button>
+							 </div>     
+						   </form>
+						 </div>
+				</div>
+		   </div>
+		   <div id="actionDelete" class="row">
+				<button id="deleteBudget" class="col-md-12 col-xs-12 btn btn-danger">Supprimer le budget</button>
+			</div>
+			<div id="footer" class="footer-copyright text-center py-3">© 2019 Copyright:
+					<a href="https://github.com/jordanbombrun/eBudget.git"> eBudget.com</a>
+			</div>
+		</div>
+		</div>
+		<script>
+			$(document).ready(function(e){
+
+				$("#addButton").click(function(e) {
+					$(".backGr, .f_modale").css("display","block");
+					$(".backGr").animate({'opacity':'.5'},350);
+					$(".f_modale").animate({'opacity':'1'},350);
+				});
+
+				$("#closeF, .backGr").click(function(e) {
+					$(".backGr, .f_modale").animate({'opacity':'0'}, 350,
+
+					function(){
+						$(".backGr, .f_modale").css("display", "none");
+					}
+					);
+				});
+			});
+
+			$(document).ready(function(e){
+
+			$("#addMvt").click(function(e) {
+				$(".backMvt, .windModal").css("display","block");
+				$(".backMvt").animate({'opacity':'.5'},350);
+				$(".windModal").animate({'opacity':'1'},350);
+			});
+
+			$("#closeF, .backMvt").click(function(e) {
+				$(".backMvt, .windModal").animate({'opacity':'0'}, 350,
+
+				function(){
+					$(".backMvt, .windModal").css("display", "none");
+				}
+				);
+			});
+			});
+
+		</script>
+	</body>
+</html>
+

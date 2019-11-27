@@ -9,43 +9,67 @@ html {
 }
 body {
     height : 100%;
+    background-image: url("./backgroundBudgetPage.png");
+    background-repeat:no-repeat;
+    background-position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size : 18px;
+  /*#fcc495 #df7400 */
 }
 #container {
     height : 100%;
-    padding-top : 2%;
+    font-size: 18px;
+    
 }
 #nameValueBudget {
-    height: 5%;
-    border : 1px solid lightgray;
-    border-radius: 5px;
-    padding : 1%;
-    margin-bottom : 1%;
+    height: 8%;
+    background-color:  rgba(255, 136, 0, 0.404);
+    border-radius: 10px;
+    margin-bottom : 2%;
+    font-size: 28px;
+    color : white;
+    padding-top: 1%;
+
 }
 #date {
-    height: 5%;
-    border : 1px solid lightgray;
-    border-radius: 5px;
+    height: 8%;
+    border : 1px solid rgba(255, 136, 0, 0.712);
+    border-radius: 10px;
+    font-size: 24px;
+    color : rgb(209, 112, 0);
+    margin-bottom: 2%;
 }
-#titeAdmin {
+#titleUser{
+    color : #f64556;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#titleAdmin {
     padding : 3%;
+    color : rgb(245, 161, 4);
 }
 #list {
     margin-bottom :3%;
 }
-#titeMvt {
-    margin-bottom : 1%;
+#titleMvt {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom : 2%;
+    color : #f64556;
 }
 #user {
-    border : 1px solid lightgray;
+    background-color:rgba(250, 250, 231, 0.384);
     border-radius: 5px;
     height: 100%;
-    padding : 2%;
+    padding:1%;
+    padding-right : 2%;
 }
 #movement {
-    border : 1px solid lightgray;
     border-radius: 5px;
     height: 100%;
-    padding:2%;
+    padding:1%;
+    padding-right : 2%;
+    background-color:rgba(250, 250, 231, 0.384);
+    
 }
 #content{
     height : 50%;
@@ -54,6 +78,88 @@ body {
     margin-left :2%;
 }
 #actionAdd{
-    margin-bottom :1%;
+    margin-bottom :2%;
     margin-left:2%;
+    font-size: 16px !important;
 }
+
+#addButton:hover, #validateButton:hover, #addMvt:hover {
+	background-color: #ff7716 ;
+	color: white;
+	box-shadow: 1px 1px 2px rgb(80, 80, 80);
+}
+#deleteBudget:hover{
+    background-color: rgb(173, 29, 29);
+    box-shadow: 1px 1px 2px rgb(80, 80, 80);
+    color:black;
+}
+
+#addButton, #validateButton, #addMvt {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-size: 16px;
+    background-color:#ff9347 ;
+    border : 1px solid #f3b182 ;
+    box-shadow: 1px 1px 2px rgb(80, 80, 80);
+}
+#deleteBudget {
+    font-size : 16px !important;
+    margin-bottom: 5%;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	background-color: rgb(245, 245, 245);
+}
+.container-fluid{
+	background-color: rgb(245, 245, 245);
+}
+.navbar-inverse .navbar-brand {
+	color: #f77a22;
+}
+.navbar-inverse .navbar-nav>.active>a{
+	background-color: #f5a66d;
+}
+.navbar-inverse .navbar-nav>.active>a:hover{
+	background-color: #f64556;
+}
+.backGr, .backMvt
+	{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #333;
+	cursor: pointer;
+	display: none;
+	}
+
+	.f_modale, .windModal
+	{
+		position:absolute;
+		top:25%;
+		left:30%;
+		width:500px;
+		height:220px;
+		background-image: url("./backalternatif.png");
+		padding:10px;
+		border-radius: 5px;
+		border:#000 solid 1px;
+		box-shadow:0px 0px 5px #444444;
+		display:none;
+	}
+		
+	#closeF
+	{
+		color: red;
+		font-size:12px;
+		font-weight:bold;
+		display:block;
+		text-align:right;
+		cursor:pointer;
+	}
+	
+	.closeF:hover{
+		text-decoration:underline;
+	}
+	

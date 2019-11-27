@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/pagelogin.css">
+    <link rel='stylesheet' type="text/css" href="stylePageLoginPhone.css" media="(max-width:775px)"/>
+    <script src="./jquery/jquery.js"></script>
+<title>eBudget</title>
+</head>
+<body>
+    <div class="container">
+        <div class="containerLog">
+            <h1>eBudget</h1>
+            <h2>Gérez vos budgets familiaux jour après jour !</h2>
+            <div class="containerInscription">
+                    <div class="row">
+                        <div id="containerInscription" class="col-md-6 col-sm-8 col-xs-12 col-md-offset-3 col-sm-offset-2">
+                        <div class="register-form">
+                            <form action="" method="post">
+                            <h2 class="text-center">Inscription</h2>
+                            <p class="hint-text">Bienvenu chez nous.</p>
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" name="first_name" class="form-control" placeholder="Prénom" required="required">
+                                </div>
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" name="last_name" class="form-control" placeholder="Nom" required="required">
+                                </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Email" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" class="form-control" placeholder="Mot de passe" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="confirm_password" class="form-control" placeholder="Confirmer votre mot de passe" required="required">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="submit" value="S'enregistrer" class="btn btn-primary btn-block btn-lg" tabindex="7">
+                                </div>
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                <div class="form-group">
+                                    <div class="btn btn-success btn-block btn-lg" onclick= "loginConnexion()">Se connecter</div>
+                                </div>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="connexion">
+                <form action="" method="post">
+                    <h2 class="text-center">Ravis de vous revoir</h2>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Pseudo" required="required">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Mot de passe" required="required">
+                    </div>
+                    <div class="form-group clearfix">
+                        <button type="submit" class="btn btn-primary pull-right">Connexion</button>
+                    </div>
+                    <div class="clearfix">
+                        <div class="pull-right" onclick="createlogin()"><i>Inscrivez-vous</i></div>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                    <a href="https://github.com/jordanbombrun/eBudget.git"> eBudget.com</a>
+                </div>
+        </div>
+        <div class="picture">
+            <div class="backgroundPic"></div>
+        </div>
+    </div>   
+    <script>
+    $('.connexion').hide();
+    $('.containerInscription').show();
+    function createlogin(){
+        $('.connexion').hide();
+        $('.containerInscription').fadeIn();
+    }
+    function loginConnexion(){
+        $('.connexion').fadeIn();
+        $('.containerInscription').hide();
+    }
+    </script>
+</body>
+

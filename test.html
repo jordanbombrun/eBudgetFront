@@ -1,0 +1,115 @@
+<!doctype html> 
+<html> 
+<head> 
+	<meta charset="utf-8" /> 
+	<title>Fenêtre modale HTML5</title> 
+	<style> 
+                #promptCompat{ 
+                        display: none; 
+                } 
+                #promptCompat.no_dialog{ 
+                        box-shadow: 0 0 5px 2px red; 
+                        padding: 10px; 
+                        display: block; 
+                        text-align: center; 
+                        font-weight: bold; 
+                } 
+                .boutons{ 
+                        padding: 10px; 
+                } 
+                dialog{ 
+                        border-radius: 10px; 
+                        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); 
+                } 
+                dialog::backdrop{ 
+                        background-color: rgba(0, 0, 0, 0.6); 
+                } 
+        </style> 
+</head> 
+<body> 
+    <div id="actionAdd" class="row">
+            <button type="button" class="row col-md-3 btn btn-default" id="addButton" onclick="">Ajouter un utilisateur</button>
+            <!--fenetre modale ajouter un utilisateur : Debut-->
+            <div class="backMvt"></div>
+                <div class="windModal">
+                    <span id="closeF" class="glyphicon glyphicon-remove"></span>
+                    <div class="add">
+                        <form action="" method="post">
+                        <h2 class="text-center">Entrez L'identifiant</h2>       
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="ID" required="required">
+                        </div>
+                        <div class="form-group clearfix">
+                            <button id="validateButton" type="submit" class="btn btn-primary pull-right">validez</button>
+                        </div>     
+                        </form>
+                    </div>
+                </div>
+            <!--fenetre modale  ajouter un utilisateur : Fin-->
+            <div id="spacingButton" class="row col-md-6"></div>
+            <button type="button" class="row col-md-3 btn btn-default" id="addButton=addMvt" onclick="">Ajouter un mouvement</button>
+             <!--fenetre modale ajouter un utilisateur : Debut-->
+             <div class="backMvt=backMvt"></div>
+             <div class="windModal=windModal">
+                 <span id="closeF= closeF" class="glyphicon glyphicon-remove"></span>
+                 <div class="add">
+                        <form action="" method="post">
+                          <h2 class="text-center">Nouveau mouvement</h2>       
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nom mouvement" required="required">
+                          </div>
+                          <div class="form-group">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                              <button type="button" class="btn btn-secondary">debit</button>
+                              <button type="button" class="btn btn-secondary">credit</button>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                           <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Quel budget
+                            <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#" title="budget 1">budget 1</a></li>
+                            <li><a href="#" title="budget 2">budget 2</a></li>
+                            <li><a href="#" title="budget 3">budget 3</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="./addbudget.html" title="budget 4">+</a></li>
+                            </ul>
+                            </div>
+                          </div>
+                          <div class="form-group clearfix">
+                            <button type="submit" class="btn btn-primary pull-right">validez</button>
+                          </div>     
+                        </form>
+                      </div>
+             </div>
+         <!--fenetre modale  ajouter un utilisateur : Fin-->	
+        </div>
+        <div id="actionDelete" class="row">
+            <button id="deleteBudget" class="col-md-12 btn btn-danger">Supprimer le budget</button>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(e){
+
+            $("#addMvt").click(function(e) {
+                $(".backMvt, .windModal").css("display","block");
+                $(".backMvt").animate({'opacity':'.5'},350);
+                $(".windModal").animate({'opacity':'1'},350);
+            });
+
+            $("#closeF, .backMvt").click(function(e) {
+                $(".backMvt, .windModal").animate({'opacity':'0'}, 350,
+
+                function(){
+                    $(".backMvt, .windModal").css("display", "none");
+                }
+                );
+            });
+        });
+
+		</script>
+</body> 
+</html>
